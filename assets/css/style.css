@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 .highlight .c { color: #998; font-style: italic; }
 
 .highlight .err { color: #a61717; background-color: #e3d2d2; }
@@ -457,7 +458,7 @@ canvas { filter: invert(100%); }
 
 @font-face { font-family: 'Fira Code'; src: "fonts/firacode.otf" format("opentype"); }
 
-.input_area { font-family: 'Fira Code' !important; font-variant-ligatures: initial !important; }
+.input_area pre, .input_area div { font-family: 'Fira Code' !important; font-variant-ligatures: initial !important; }
 
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
 
