@@ -455,6 +455,10 @@ table td { background-color: #121212; border-color: #333333; color: rgba(255, 25
 
 canvas { filter: invert(100%); }
 
+@font-face { font-family: 'Fira Code'; src: "fonts/firacode.otf" format("opentype"); }
+
+.input_area { font-family: 'Fira Code'; font-variant-ligatures: initial; }
+
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
 
 [class^="language-"]:not(.language-plaintext) pre, [class^="language-"]:not(.language-plaintext) code { background-color: #323443 !important; color: #f8f8f2; }
