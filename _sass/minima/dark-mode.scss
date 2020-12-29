@@ -81,11 +81,6 @@ canvas {
     filter: invert(100%);
 }
 
-@font-face {
-  font-family: 'Fira Code';
-  src: "fonts/firacode.otf" format("opentype");
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 .input_area pre, .input_area div {
