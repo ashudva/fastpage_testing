@@ -424,7 +424,7 @@ pre code { font-size: 15px !important; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-html, body, input, textarea, select, button { color: #1e1e1e !important; background-color: #121212 !important; }
+html, body, input, textarea, select, button { color: rgba(255, 255, 255, 0.87) !important; background-color: #121212 !important; }
 
 a { color: #4bbaff !important; }
 
@@ -455,6 +455,12 @@ table td { background-color: #121212; border-color: #333333; color: rgba(255, 25
 .flash { color: #121212 !important; filter: brightness(80%); }
 
 canvas { filter: invert(100%); }
+
+.post-list > li > div { border-radius: 5px !important; box-shadow: 0 3px 6px rgba(149, 157, 165, 0.15) !important; background-color: #212121; border: none; }
+
+li .post-meta-description { color: #BDBDBD !important; }
+
+.image-preview, .output_png { filter: invert(90%); }
 
 .input_area pre, .input_area div { font-family: 'Fira Code' !important; font-variant-ligatures: initial !important; }
 
