@@ -424,7 +424,7 @@ pre code { font-size: 15px !important; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-html, body, input, textarea, select, button { color: rgba(255, 255, 255, 0.87) !important; background-color: #121212 !important; }
+html, body, input, textarea, select, button { color: #1e1e1e !important; background-color: #121212 !important; }
 
 a { color: #4bbaff !important; }
 
