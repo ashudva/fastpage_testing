@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 .highlight .c { color: #998; font-style: italic; }
 
 .highlight .err { color: #a61717; background-color: #e3d2d2; }
@@ -454,6 +455,18 @@ table td { background-color: #121212; border-color: #333333; color: rgba(255, 25
 .flash { color: #121212 !important; filter: brightness(80%); }
 
 canvas { filter: invert(100%); }
+
+.input_area pre, .input_area div { font-family: 'Fira Code' !important; font-variant-ligatures: initial !important; }
+
+.site-header { font-family: 'IBM Plex Mono', monospace; border: none; }
+
+.site-header a:hover { color: rgba(255, 255, 255, 0.69) !important; text-decoration: none !important; }
+
+.home { font-family: 'Roboto Mono', monospace !important; }
+
+.page-content { font-family: 'Roboto', sans-serif; }
+
+.site-footer { font-family: 'IBM Plex Mono', monospace; border: none; }
 
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
 
