@@ -7,6 +7,7 @@ branch: master
 badges: true
 comments: true
 categories: [fastpages, jupyter]
+image: images/vignette/bm.png
 hide: false
 search_exclude: true
 nb_path: _notebooks/2020-12-27-Bird-Migration.ipynb
@@ -147,6 +148,13 @@ layout: notebook
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This is just for testing purpose which failed but then worked</p>
+
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
