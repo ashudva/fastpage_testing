@@ -426,32 +426,6 @@ pre code { font-size: 15px !important; }
 /*----- ADD YOUR STYLES BELOW -------*/
 @media (prefers-color-scheme: dark) { html, body, input, textarea, select, button { color: rgba(255, 255, 255, 0.87) !important; background-color: #121212 !important; } a { color: #4bbaff !important; } a:hover { color: rgba(255, 255, 255, 0.87) !important; } .site-title, .site-title:visited, .site-nav, .page-link { color: rgba(255, 255, 255, 0.87) !important; } .site-nav { background-color: #121212; border-color: #333333; } * { scrollbar-color: #121212 #333333; } pre, code { border-color: #333333; background-color: #1e1e1e; } .page-description { color: rgba(255, 255, 255, 0.69); } .post-meta { color: rgba(255, 255, 255, 0.38); } .post-content p, .post-content li { color: rgba(255, 255, 255, 0.69); } .btn { background-color: #1e1e1e !important; color: rgba(255, 255, 255, 0.87) !important; border-color: #333333 !important; } .btn:hover { background-color: #121212 !important; } table th { background-color: #1e1e1e; border-color: #333333; color: rgba(255, 255, 255, 0.87); } table td { background-color: #121212; border-color: #333333; color: rgba(255, 255, 255, 0.69); } .flash { color: #121212 !important; filter: brightness(80%); } canvas { filter: invert(100%); } .post-list > li > div { border-radius: 5px !important; box-shadow: none !important; background-color: #1e1e1e; border: none !important; } li .post-meta-description { color: rgba(255, 255, 255, 0.69) !important; } .image-preview, .output_png { filter: invert(90%); } }
 
-/* The switch - the box around the slider */
-.dark-mode { display: flex; float: right; justify-content: center; align-items: center; }
-
-.dark-mode-label { padding-right: 5px; font-size: 24px; }
-
-.switch { position: relative; display: inline-block; width: 52px; height: 24px; padding-top: 7px; }
-
-/* Hide default HTML checkbox */
-.switch input { opacity: 0; width: 0; height: 0; }
-
-/* The slider */
-.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; -webkit-transition: .4s; transition: .4s; }
-
-.slider:before { position: absolute; content: ""; height: 18px; width: 18px; left: 4px; bottom: 3px; background-color: white; -webkit-transition: .4s; transition: .4s; }
-
-input:checked + .slider { background-color: #2196F3; }
-
-input:focus + .slider { box-shadow: 0 0 1px #2196F3; }
-
-input:checked + .slider:before { -webkit-transform: translateX(26px); -ms-transform: translateX(26px); transform: translateX(26px); }
-
-/* Rounded sliders */
-.slider.round { border-radius: 34px; }
-
-.slider.round:before { border-radius: 50%; }
-
 .input_area pre, .input_area div, code { font-family: 'Fira Code' !important; font-variant-ligatures: initial !important; }
 
 .site-header { font-family: 'IBM Plex Mono', monospace; border: none; }
