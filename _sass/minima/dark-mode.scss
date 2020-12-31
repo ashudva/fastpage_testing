@@ -5,92 +5,168 @@ $dark-grey : #121212;
 // $dark-grey : #1F1B24;
 $overlay: mix($dark-grey, white, 95%);
 $overlay-light: mix($dark-grey, white, 86%);
+@media (prefers-color-scheme: dark) {
 
-html, body, input, textarea, select, button {   
-  color: $high-emph !important;
-  background-color: $dark-grey !important;
-}
-
-a {
-    color: rgb(75, 186, 255) !important;
-}
-
-a:hover {
-    color:$high-emph !important;
-}
-
-.site-title, .site-title:visited, .site-nav, .page-link {
+    html, body, input, textarea, select, button {   
     color: $high-emph !important;
-}
-
-.site-nav {
-    background-color: $dark-grey;
-    border-color: $overlay-light;
-}
-
-* {
-    scrollbar-color: $dark-grey $overlay-light;
-}
-
-pre, code {
-    // BVas a lighter colour to better highlight short code words
-    border-color: $overlay-light;
-    background-color: $overlay;
-}
-
-.page-description {
-    color: $med-emph;
-}
-
-.post-meta {
-    color: $low-emph;
-}
-
-.post-content p, .post-content li {
-    color: $med-emph;
-}
-
-.btn {
-    background-color: $overlay !important;
-    color: $high-emph !important;
-    border-color: $overlay-light !important;
-}
-
-.btn:hover {
     background-color: $dark-grey !important;
+    }
+
+    a {
+        color: rgb(75, 186, 255) !important;
+    }
+
+    a:hover {
+        color:$high-emph !important;
+    }
+
+    .site-title, .site-title:visited, .site-nav, .page-link {
+        color: $high-emph !important;
+    }
+
+    .site-nav {
+        background-color: $dark-grey;
+        border-color: $overlay-light;
+    }
+
+    * {
+        scrollbar-color: $dark-grey $overlay-light;
+    }
+
+    pre, code {
+        // BVas a lighter colour to better highlight short code words
+        border-color: $overlay-light;
+        background-color: $overlay;
+    }
+
+    .page-description {
+        color: $med-emph;
+    }
+
+    .post-meta {
+        color: $low-emph;
+    }
+
+    .post-content p, .post-content li {
+        color: $med-emph;
+    }
+
+    .btn {
+        background-color: $overlay !important;
+        color: $high-emph !important;
+        border-color: $overlay-light !important;
+    }
+
+    .btn:hover {
+        background-color: $dark-grey !important;
+    }
+
+    table th{
+        background-color: $overlay;
+        border-color: $overlay-light;
+        color: $high-emph;
+    }
+
+    table td{
+        background-color: $dark-grey;
+        border-color: $overlay-light;
+        color: $med-emph;
+    }
+
+    .flash {
+        color: $dark-grey !important;
+        filter: brightness(80%);
+    }
+
+    canvas {
+        filter: invert(100%);
+    }
+    .post-list > li > div {
+        border-radius: 5px !important;
+        box-shadow: none !important;
+        background-color:$overlay;
+        border: none !important;
+    }
+
+    li .post-meta-description {
+        color: $med-emph !important;
+    }
+
+    .image-preview, .output_png {
+        filter: invert(90%);
+    }
 }
 
-table th{
-    background-color: $overlay;
-    border-color: $overlay-light;
-    color: $high-emph;
+/* The switch - the box around the slider */
+.dark-mode {
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+}
+.dark-mode-label {
+    padding-right: 5px;
+    font-size: 24px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 24px;
+  padding-top: 7px;
 }
 
-table td{
-    background-color: $dark-grey;
-    border-color: $overlay-light;
-    color: $med-emph;
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-.flash {
-    color: $dark-grey !important;
-    filter: brightness(80%);
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-canvas {
-    filter: invert(100%);
-}
-.post-list > li > div {
-    border-radius: 5px !important;
-    box-shadow: 0 3px 6px rgba(149,157,165,0.15) !important;
-    background-color: #212121;
-    border: none;
-}
-
-li .post-meta-description {
-    color: #BDBDBD !important;
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-.image-preview, .output_png {
-    filter: invert(90%);
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
